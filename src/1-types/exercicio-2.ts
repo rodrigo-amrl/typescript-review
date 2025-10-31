@@ -4,6 +4,10 @@
 interface ItemWithId {
     id: number;
 }
+
+/**
+ * Repositório genérico para gerenciar itens com propriedade 'id'.
+ */
 class Repository<T extends ItemWithId> {
     private items: T[] = [];
 
